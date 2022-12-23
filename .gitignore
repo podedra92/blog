@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
-
+*/.vitepress/cache/
+*/.vitepress/dist/
+node_modules/
 # Object files
 *.o
 *.ko

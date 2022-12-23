@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Prakash tech blog",
+  "main": "index.js",
+  "repository": "https://github.com/podedra92/blog.git",
+  "author": "podedra92 <podedra@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.33",
+    "vue": "^3.2.45"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
