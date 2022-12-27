@@ -7,11 +7,11 @@ hero:
 features:
   - icon: 💪
     title: Courses
-    details: Zero to Hero, a set of catogorised and completed documentation.
+    details: Zero to Hero, a set of catogorised documentation or a series of docs that will make up a course.
   - icon: 📚
     title: Learnings
     details: Everything else, just an uncategorised brain dump of learnings or snippets of information.
   - icon: 🤓
     title: About Me
-    details: Quick page on me, to appease Narcissus.
+    details: Quick page on me, to appease my own ego!
 ---
