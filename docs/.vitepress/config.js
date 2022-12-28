@@ -22,6 +22,33 @@ export default {
     editLink: {
       pattern: 'https://github.com/podedra92/blog',
       text: 'Edit this page on GitHub'
+    },
+    sidebar: {
+      '/learning/': [
+        {
+          text: 'Introduction',
+          items: [
+            { text: 'Recent Posts', link: '/learning/' },
+          ]
+        },
+        {
+          text: 'Documentation',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'How this blog was made', link: '/learning/docs/this-blog' },
+            { text: 'Tips on Technical Writing', link: '/learning/docs/tech-writing' },
+          ]
+        }
+      ],
+      '/courses/': [
+        {
+          text: 'Config',
+          items: [
+            { text: 'courses', link: '/courses/' },
+          ]
+        }
+      ]
     }
   }
 }

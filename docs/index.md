@@ -11,7 +11,9 @@ features:
   - icon: 📚
     title: Learnings
     details: Everything else, just an uncategorised brain dump of learnings or snippets of information.
+    link: 'learning/'
   - icon: 🤓
     title: About Me
     details: Quick page on me, to appease my own ego!
+    link: 'about/'
 ---
