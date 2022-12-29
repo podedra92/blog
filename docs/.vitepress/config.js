@@ -6,7 +6,7 @@ export default {
   base: '/blog/',
   cleanUrls: 'with-subfolders',
   themeConfig: {
-    logo: '../.assets/ninja-laptop.png',
+    logo: '/ninja-laptop.png',
     socialLinks: [
       { icon: 'linkedin', link: 'https://uk.linkedin.com/in/prakash-odedra-892183183' },
       { icon: 'github', link: 'https://github.com/podedra92' }
