@@ -8,6 +8,12 @@ export default{
   methods: {
     clickMethod(link) {
       window.location.assign(link)
+    },
+    getImgUrl(name) {
+      if(name.includes("http")){
+        return name
+      }
+      return new URL(`../../learning/assets/${name}`, import.meta.url).href
     }
   }
 }
@@ -17,7 +23,7 @@ export default{
   <div class="card"
     @click="clickMethod(post.link)">
     <div class="card__header">
-      <img :src=post.image alt="card__image">
+      <img :src=getImgUrl(post.image) alt="card__image">
     </div>
     <div class="card__body">
       <h3>{{ post.title }}</h3>

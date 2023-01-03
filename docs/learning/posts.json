@@ -1,6 +1,6 @@
 [
     {
-        "image": ".assets/logo-picasso.png",
+        "image": "logo-picasso1.png",
         "title": "What is this",
         "description": "A description of what is this blog",
         "date": "28/12/2022",
@@ -15,17 +15,17 @@
     },
 
     {
-        "image": ".assets/logo-picasso.png",
+        "image": "logo-picasso1.png",
         "title": "What is this",
         "description": "A description of what is this blog",
         "date": "28/12/2022",
         "link": "./index"
     },
     {
-        "image": "/blog/.assets/logo-picasso.png",
+        "image": "logo-picasso1.png",
         "title": "What is this",
         "description": "A description of what is this blog",
         "date": "28/12/2022",
-        "link": "./index"
+        "link": "/index"
     }
 ]
