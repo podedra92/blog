@@ -36,6 +36,7 @@ export default{
 <style lang="css" scoped>
 img {
   max-width: 100%;
+  max-height: 0.01fr;
   display: block;
   object-fit: cover;
   height: auto;

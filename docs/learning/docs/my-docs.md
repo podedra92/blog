@@ -1,3 +1,7 @@
+---
+title: Documentation tips
+tags: documentation,tips
+---
 # Documentation Tips
 
 ## Introduction
@@ -52,6 +56,9 @@ Take time to also have a bit of fun with it - elaborate your notes within the po
 
 Once you've read it through and are happy, publish it and never look back (unless someone including yourself has feedback, corrections or hates it).
 
+Actually this is a lie, always look back dust off your old documents, and see how you can add to or improve.
+You also want to remember what's covered, much like code you don't want to repeat yourself.
+
 ## Tools
 
 ### Notes
@@ -76,3 +83,8 @@ It just gives the whole diagram a sketchy, hand drawn look which I can't help bu
 [Vitepress](https://vitepress.vuejs.org/guide/what-is-vitepress) is in alpha, so don't use unless you're willing to keep up with potentially breaking changes, but it's extremely lightweight, whilst still allowing the use of vue components.
 
 If you would like to follow suit, I've written a how to in the [previous page](./this-blog.md)
+
+## Conclusion
+
+Thats it for now!
+I'll look to keep this document up to date as I find new and exciting things to share!

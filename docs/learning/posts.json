@@ -1,31 +1,23 @@
 [
     {
-        "image": "logo-picasso1.png",
-        "title": "What is this",
-        "description": "A description of what is this blog",
-        "date": "28/12/2022",
-        "link": "./index"
+        "image": "docs/cover-my-docs.png",
+        "title": "Documentation Tips",
+        "description": "A quick page on writing tips, as well as tools used.",
+        "date": "03/01/2023",
+        "link": "./docs/my-docs"
     },
     {
-        "image": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "title": "What is this",
-        "description": "A description of what is this blog",
+        "image": "docs/cover-this-blog.png",
+        "title": "How did you make this amazing blog?",
+        "description": "A step by step of how this blog was made and published.",
         "date": "28/12/2022",
-        "link": "./index"
-    },
-
-    {
-        "image": "logo-picasso1.png",
-        "title": "What is this",
-        "description": "A description of what is this blog",
-        "date": "28/12/2022",
-        "link": "./index"
+        "link": "./docs/this-blog"
     },
     {
         "image": "logo-picasso1.png",
-        "title": "What is this",
-        "description": "A description of what is this blog",
+        "title": "What is this??",
+        "description": "A random card to make it look like I did something!",
         "date": "28/12/2022",
-        "link": "/index"
+        "link": "./index"
     }
 ]

@@ -1,3 +1,5 @@
+import { SearchPlugin } from 'vitepress-plugin-search'
+
 export default {
   title: 'Useful',
   titleTemplate: 'Dev Blog',
@@ -50,5 +52,8 @@ export default {
         }
       ]
     }
+  },
+  vite:{
+    plugins: [SearchPlugin()]
   }
 }
