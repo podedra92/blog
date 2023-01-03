@@ -37,7 +37,7 @@ export default {
           collapsed: true,
           items: [
             { text: 'How this blog was made', link: '/learning/docs/this-blog' },
-            { text: 'Tips on Technical Writing', link: '/learning/docs/tech-writing' },
+            { text: 'Tips on Writing', link: '/learning/docs/my-docs' },
           ]
         }
       ],
