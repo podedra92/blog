@@ -6,7 +6,7 @@ export default {
   description: 'Prakashs Dev Blog',
   lang: 'en-UK',
   base: '/blog/',
-  cleanUrls: 'with-subfolders',
+  //cleanUrls: 'with-subfolders',
   themeConfig: {
     logo: '/ninja-laptop.png',
     socialLinks: [
