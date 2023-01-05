@@ -1,6 +1,8 @@
 <script setup>
 import PostCard from "../.vitepress/components/PostCard.vue"
 import posts from './posts.json'
+import { useData } from 'vitepress'
+const { isDark } = useData()
 </script>
 
 # Latest Additions
@@ -10,6 +12,7 @@ import posts from './posts.json'
   v-for="post in posts"
   :key="post.name"
   :post="post"
+  :isDark=isDark
 />
 </div>
 

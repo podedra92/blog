@@ -3,6 +3,9 @@ export default{
   props: {
     post: {
       type: Object
+    },
+    isDark: {
+      type: Boolean
     }
   },
   methods: {
@@ -15,12 +18,20 @@ export default{
       }
       return new URL(`../../learning/assets/${name}`, import.meta.url).href
     }
+  },
+  computed: {
+    cssVars () {
+      return {
+        '--box-shadow': this.isDark ? '#525252' : '#cee1ce',
+        '--hover-background': this.isDark ? '#525252' : '#f1f3f3'
+      }
+    }
   }
 }
 </script>
 
 <template>
-  <div class="card"
+  <div class="card" :style="cssVars"
     @click="clickMethod(post.link)">
     <div class="card__header">
       <img :src=getImgUrl(post.image) alt="card__image">
@@ -47,13 +58,12 @@ img {
   flex-direction: column;
   padding: 1rem;
   height: 100%;
-  box-shadow: 0 .1rem 1rem #cee1ce;
+  box-shadow: 0 .1rem 1rem var(--box-shadow);
   border-radius: 1em;
-  background: linear-gradient(to right, #ffffff, #fffafa);
 }
 
 .card:hover {
-  background: #e3ecf0;
+  background: var(--hover-background);
   cursor: pointer;
   transform: scale(102%);
 }
