@@ -5,8 +5,8 @@ lastUpdated: true
 ---
 # How I created this awesome blog!
 
-I'm going to give you the secret sauce!
-Altough not overly impressive, I did spend a good day wondering what to work with and went ahead and published it.
+I'm going to give you the secret sauce!<br/>
+Although not overly impressive, I did spend a good day wondering what to work with and went ahead and published it.<br/>
 This page will share the tech used with a quick how to, try not to be too in awe!!
 
 ![sauce](../assets/docs/awesome-sauce.gif)
@@ -23,30 +23,32 @@ You're probably wondering why not use VuePress, it's more mature and both are st
 It's documentation is more complete and its more customisable. 
 
 VitePress is a newer currently in alpha, they may introduce breaking changes and their concern is focused on performance (not really a bonus for me at this stage) and ease of use (more of a winner).
-Its oppinionated allowing me to just focus on content, whilst allowing to delve into a bit of Vue by injecting components.
+Its opinionated allowing me to just focus on content, whilst allowing to delve into a bit of Vue by injecting components.
 
-For me I'd endup in a rabbit hole and spend days on customising the whole blog and looking up the latest plugins....
+For me I'd end up in a bit of a rabbit hole, spend days customising the whole blog and looking up the latest plugins....<br/>
 I just didn't need the distraction, I just want to write to an MD file and publish, whilst also allowing me to create custom components to play with Vue a bit.
 
-That's my retrospective reasoning, the real reason is I was going to quickly PoC both, but once I had setup vitepress I thought why bother. See [paradox of choice](https://www.youtube.com/watch?v=VO6XEQIsCoM&ab_channel=TED)
+That's my retrospective reasoning, the real reason is I was going to quickly PoC both, but once I had setup vitepress I thought why bother. <br/>
+[See paradox of choice.](https://www.youtube.com/watch?v=VO6XEQIsCoM&ab_channel=TED)
 
-So the quick win was vitepress, doesn't mean its the right choice but for now it definetly will suffice.
+So the quick win was vitepress, doesn't mean its the right choice but for now it will suffice.
 
 ### Github Pages
 
 The question of where to host, should I go Azure Static Web App, S3 or firebase?
-I could've placed the compiled site anywhere really, but I quickly landed on GitHub Pages, its a free service offered by GitHub that allows the hosting of websites directly from a GitHub repository (published using github actions of course).
+I could've placed the compiled site anywhere really, but I quickly landed on GitHub Pages.<br/>
+Its a free service offered by GitHub that allows the hosting of websites directly from a GitHub repository (published using github actions of course).
 
-This for now seems like the easiest and obvious solution as I was pushing my code to my git repo.
+This for now seems like the easiest and obvious solution as I was already pushing my code to my git repo.
 By default you will get a domain ending in `github.io`, obviously there is nothing stopping you from creating your own cname.
 
-For me and my one visitor (visiting on my mobile) it is more than capable of handling the the load...
+For me and my one visitor (me proof reading when on the train) it is more than capable of handling the the load...
 
 ![alone](../assets/docs/alone.gif)
 
 ## Getting Started
 
-Always refer to [VitePress getting started docs.](https://vitepress.vuejs.org/guide/getting-started)
+Always refer to the [VitePress getting started docs here.](https://vitepress.vuejs.org/guide/getting-started)<br/>
 However I've listed some steps with some gotchas below!
 
 ### Initial VitePress Project
@@ -65,7 +67,7 @@ The second command, `yarn add`, adds the vitepress and vue packages to the proje
 The --dev flag indicate these dependencies are only required during development.
 
 
-Now you'll want nest the following to the package.json.
+Next you can nest the following to the package.json.
 
 ```json
   "scripts": {
@@ -93,9 +95,11 @@ Example `package.json`
   }
 }
 ```
-Ok so the scripts json is as expected key-value pairs, the key is the command to run in the terminal, the values are the command that should be executed.
+Why, well the the scripts json object is as expected, key-value pairs, the key is the command to run in the terminal, the values are the command that will be executed.
 
 So instead of `yarn vitepress dev docs` you would just enter `yarn docs:dev` into your terminal.
+
+What does each command do:
 
 - **docs:dev** - Starts a development server for the documentation locally.
 - **docs:build** - Builds the documentation for production.
@@ -124,13 +128,13 @@ My general folder structure is:
 Ok lets have a quick look at the structure - you dont need to necessarily follow this but it's a structure that works for me.
 - **.github:** This dir currently contains workflows, just one for now to deploy the site.
 - **docs:** Contains config components and markdown files, equivelant to src.
-- **.vitepress:** Contains config and custom themes, it also contains dist and cache which remember to add to your .gitignore!
-I have however thought and may move this to the root of the project, so docs directory contain just that.
-- **components:** Where I store custom vuepress components 
-- **public:** So this is a bit of an escape hatch, it provides static assets that aren't referenced within documentation (e.g. themeConfig logo).
+- **.vitepress:** Contains config and custom themes, it also contains dist and cache remember to add these to your .gitignore!
+I may however move this to the root of the project, so docs directory contain just that.
+- **components:** Where I store custom Vue components 
+- **public:** So this is a bit of an escape hatch, it copies these over as static assets, classified as those which aren't referenced within documentation (e.g. themeConfig logo).
 These assets are copied over to the root of the dist directory, and the name is not appended with a hash.
 
-While we're on this topic, I try to categorise my docs, and can end up with nested directories such as `sub_category_dir`, the same principal is used within the assets directory. <br/>
+While we're on this topic, I try to categorise my docs, and also create nested directories such as `sub_category_dir`, the same principal is used within the assets directory. <br/>
 Again you may choose your own structure but it feels the most logical approach for me, for now.
 
 
@@ -139,7 +143,7 @@ Again you may choose your own structure but it feels the most logical approach f
 We define our navs within .vitepress/config.js.
 
 So the main nav bar is relatively straight forward, define text and path to the dir.
-Each dir should contain an index.md for the page to display.
+Each dir should contain an index.md for the page to display a homepage.
 
 ```json
 nav: [
@@ -147,9 +151,9 @@ nav: [
       { text: 'my second category', link: '/category_dir2/' }
     ]
 ```
-
-To allow for navigation within the category directory to all the sub categories, I've added a sidebar per main directory.
-If a sub-category contains more than one markdown file I've defined a collabsible menu, just to make visibility easier.
+<br/>
+To allow for navigation within the category directory to all the sub categories, I've added a sidebar.<br/>
+If a sub-category contains more than one markdown file I've defined a collabsible menu, just to make it a bit easier to navigate.
 
 ```json
 sidebar: {
@@ -184,26 +188,28 @@ Great so I have my blog and it seems to work locally now what?
 
 Get yourself a github account, create a project and push your vitepress code!
 
-Ok so I wont put the whole yaml file content in here but you can visit [Vitepress deployment docs](https://vitepress.vuejs.org/guide/deploying#github-pages) to see it, or visit my repo.
+Ok so I wont put the whole workflow in here but you can visit [Vitepress deployment docs](https://vitepress.vuejs.org/guide/deploying#github-pages) to see it, or visit my repo.
 
 Now its worth noting I'm doing something bad and not linting my markdown files, this should probably be included within my workflow.<br/>
 I'll also try quickly define each step:
 
 - Checkout the repository using actions/checkout@v3.
 - Download specified version of Node.js using actions/setup-node@v3 action.
-- Run `yarn install --frozen-lockfile` this installs project dependencies, the flag uses package-lock file.
-- Run `yarn docs:build` to build the documentation.
-- We leverage peaceiris/actions-gh-pages@v3 action, specifying the build artifacts path from step above (typically .vitepress/dist), I've also set an additional flag enable_jekyll to false.
-Ultimately this pushes the build artifacts to a publish branch, default is gh-pages.
+- `yarn install --frozen-lockfile` this installs project dependencies, the flag uses package-lock file.
+- `yarn docs:build` to build the documentation.
+- We leverage `peaceiris/actions-gh-pages@v3` action, specifying the build artifacts path from step above (typically .vitepress/dist), I've also set an additional variable `enable_jekyll: false`.
+Ultimately this pushes the build artifacts to a branch, default is gh-pages.
 
-Now this part is magic, `gh-pages` when files are pushed to this branch, GitHub bot triggers a workflow to serve the site at `<username>.github.io/<projectname>`.
+Now this part is magic...
 
-We could potentially use `actions/deploy-pages@v1` to deploy to GitHub pages in place of `peaceiris/actions-gh-pages@v3`, thus publishing directly from main, but having a quick look `peaceiris/actions-gh-pages@v3` it does add and delete some files so this would need to be accounted for, so I may revisit this.
+When files are pushed to the `gh-pages` branch, a bot triggers a workflow to serve the site at `<username>.github.io/<projectname>`.
+
+We could potentially use `actions/deploy-pages@v1` to deploy to GitHub pages in place of `peaceiris/actions-gh-pages@v3`, thus publishing directly from main, but having a quick look `peaceiris/actions-gh-pages@v3` it does add and delete some files so this would need to be accounted for, so I may revisit this later, but for now I will leave as is.
 
 Anyhow once the automated run has completed on branch gh-pages you are good to go!
 
 ::: warning
-If all your assets are missing and you're greeted with 404 you may be missing your base path.
+If all your assets are missing and you're greeted with 404 you may be missing your base path.<br/>
 So within `.vitepress/config.js` add `base: '/<projectName>/'`
 :::
 
@@ -220,7 +226,7 @@ So within `.vitepress/config.js` add `base: '/<projectName>/'`
 
 **GitHub Pages:**
 
-For free hosting its great, can't complain too much, and for such a small blog its fine!
+For free hosting its great, can't complain too much, and for such a small blog its fine!<br/>
 A potential drawback is the repository containing the blog must be Public, unless you're using github pro or enterprise.
 
 This isn't really an issue for me though!
