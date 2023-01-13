@@ -1,5 +1,5 @@
 <script setup>
-import PostCard from "../.vitepress/components/PostCard.vue"
+import PostCard from "/components/PostCard.vue"
 import posts from './posts.json'
 import { useData } from 'vitepress'
 const { isDark } = useData()

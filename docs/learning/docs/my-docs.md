@@ -1,6 +1,7 @@
 ---
 title: Documentation tips
 tags: documentation,tips
+lastUpdated: true
 ---
 # Documentation Tips
 
