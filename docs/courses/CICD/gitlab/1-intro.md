@@ -1,4 +1,20 @@
-GitLab is a web-based Git repository manager that provides source code management (SCM), issue tracking, and continuous integration/continuous deployment (CI/CD) services.
+---
+title: Gitlab Introduction
+tags: gitlab,ci/cd
+lastUpdated: true
+---
+# Gitlab Introduction
+## Introduction
+
+So this collection of docs, or "course"... will attempt to introduce CI/CD for Gitlab.
+I'll try to acompany these walk-throughs with source code/yaml within [this github repository.]()
+
+This page will run through what is gitlab and a few of its features.<br/>
+Before we get started if you want an overview of what is CI/CD, though pretty well known now, please refer to [this doc here.](../index.md)
+
+## What is Gitlab?
+
+GitLab can be a SaaS (Software as a Service) or self-hosted solution, if offers Git repository manager, issue tracking, and CI/CD (continuous integration/continuous deployment) services.
 
 GitLab allows developers to store and manage their code in a central location, and provides tools for collaborating with other developers. For example, GitLab's built-in issue tracking system makes it easy for team members to report bugs, request features, and manage the development process. Additionally, GitLab provides a powerful continuous integration and continuous deployment (CI/CD) system that makes it easy for developers to build, test, and deploy their code.
 
