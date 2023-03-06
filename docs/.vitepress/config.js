@@ -45,9 +45,26 @@ export default {
       ],
       '/courses/': [
         {
-          text: 'Config',
           items: [
-            { text: 'courses', link: '/courses/' },
+            { text: 'Introduction', link: '/courses/' },
+          ]
+        },
+        {
+          text: 'Infrastructure As Code',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'Intro', link: '/courses/IAC/' },
+            { text: 'Good Practices', link: '/courses/IAC/good-practices' },
+            { text: 'Pulumi vs Terraform', link: '/courses/IAC/pulumi-vs-terraform' },
+            {
+              text: 'Pulumi',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: 'Intro', link: '/courses/IAC/pulumi/1-intro' },
+              ]
+            }
           ]
         }
       ]
