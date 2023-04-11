@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,x as o}from"./chunks/framework.dab3cab5.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"courses/CICD/index.md"}'),a={name:"courses/CICD/index.md"},n=o("p",null,"What is CI/CD",-1),r=[n];function c(d,i,_,p,l,m){return t(),s("div",null,r)}const x=e(a,[["render",c]]);export{f as __pageData,x as default};
