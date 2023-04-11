@@ -49,6 +49,7 @@ export default {
           collapsed: true,
           items: [
             { text: 'OPA & Envoy', link: '/learning/auth/opa-envoy.md' },
+            { text: 'OPA & Envoy pt2.', link: '/learning/auth/opa-envoy-pt2.md' },
           ]
         }
       ],
@@ -64,16 +65,16 @@ export default {
           collapsed: true,
           items: [
             { text: 'Intro', link: '/courses/IAC/' },
-            { text: 'Good Practices', link: '/courses/IAC/good-practices' },
-            { text: 'Pulumi vs Terraform', link: '/courses/IAC/pulumi-vs-terraform' },
-            {
-              text: 'Pulumi',
-              collapsible: true,
-              collapsed: true,
-              items: [
-                { text: 'Intro', link: '/courses/IAC/pulumi/1-intro' },
-              ]
-            }
+            // { text: 'Good Practices', link: '/courses/IAC/good-practices' },
+            // { text: 'Pulumi vs Terraform', link: '/courses/IAC/pulumi-vs-terraform' },
+            // {
+            //   text: 'Pulumi',
+            //   collapsible: true,
+            //   collapsed: true,
+            //   items: [
+            //     { text: 'Intro', link: '/courses/IAC/pulumi/1-intro' },
+            //   ]
+            // }
           ]
         }
       ]
