@@ -76,7 +76,7 @@ services:
 
 If we run `docker-compose up` the pod should run and be exposed on port 8080
 
-Lets try a get request to our workspaces endpoint: [http://localhost:8080/workspaces/1](http://localhost:8080/workspaces/1)
+Lets try a get request to our workspaces endpoint: `http://localhost:8080/workspaces/1`
 
 ```json
 {
