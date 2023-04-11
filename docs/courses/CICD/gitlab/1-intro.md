@@ -7,7 +7,7 @@ lastUpdated: true
 ## Introduction
 
 So this collection of docs, or "course"... will attempt to introduce CI/CD for Gitlab.
-I'll try to acompany these walk-throughs with source code/yaml within [this github repository.]()
+I'll try to acompany these walk-throughs with source code/yaml within this github repository.
 
 This page will run through what is gitlab and a few of its features.<br/>
 Before we get started if you want an overview of what is CI/CD, though pretty well known now, please refer to [this doc here.](../index.md)
