@@ -1,0 +1,21 @@
+# Keptn End-to-End Delivery
+
+Deploy a microservice (using helm)
+Generate load on the deployed service (using Locust)
+Monitor the microservice (using Prometheus)
+Add approval gates into the delivery pipeline
+Add automated SLO-based quality evaluations both pre and post release
+Show how Keptn can orchestrate self-healing patterns and tools (like scaling a helm deployment)
+
+Last but not least, Locust is a modern Python based load testing tool. You can exchange it with any other load testing tool (integrations for JMeter, artillery, k6, and NeoLoad are available).
+
+
+https://github.com/settings/tokens
+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
+
+
+Keptn cli can be used to interact with the control plane
+
+The bridge is the web-based interface for Keptn.
+
+In the next step, keptn will introduce "guard rails" in this process. The helloservice application will be monitored and releases will be programatically approved / declined based on a quality signature defined by you and calculated by keptn.

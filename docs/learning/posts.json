@@ -1,5 +1,12 @@
 [
     {
+        "image": "auth/cover-opa.png",
+        "title": "OPA & Envoy",
+        "description": "A quick step by step getting started on using OPA & Envoy with Azure AD.",
+        "date": "29/03/2023",
+        "link": "./auth/opa-envoy"
+    },
+    {
         "image": "docs/cover-my-docs.png",
         "title": "Documentation Tips",
         "description": "A quick page on writing tips, as well as tools used.",
